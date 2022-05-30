@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+
+<div>
+    <!-- {{ with .Site.GetPage "/post" }}<a href="{{.Permalink}}">{{ .Title }}</a>{{ end }} -->
+    {{ range .Pages }}
+    <div>
+        <a href={{.Permalink}}>{{.Title}}</a>
+    </div>
+    {{ end }}
+</div>

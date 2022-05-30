@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+
+<div>
+    stop.
+</div>
+
+<div>
+    {{range .Site.Menus.main}}
+    <div>
+        <a href="{{.URL}}">{{.Name}}</a>
+    </div>
+    {{end}}
+</div>
